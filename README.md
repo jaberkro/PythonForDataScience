@@ -10,3 +10,5 @@ This exercise is about getting to know the different data types that are commonl
 #### ex01
 This exercise is about printing and formatting date time information. In my implementation I worked with F-strings and time.strftime.
 
+#### ex02
+This exercise is about identifying the type of an object, which can be simply done with the type() function. However, simply using this and returning does not give the expected output. To create the expected output, I used a switch case, that will type a bit of extra information if it is a specific type. For integers, we print 'type not found', even though it is possible to find the type of an integer.
