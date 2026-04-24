@@ -1,7 +1,7 @@
 def all_thing_is_obj(object: any) -> int:
 	match object:
 		case list():
-			print("List :", type(object))
+			print("List : ", type(object))
 		case tuple():
 			print("Tuple :", type(object))
 		case set():
