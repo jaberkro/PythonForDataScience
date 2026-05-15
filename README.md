@@ -15,3 +15,6 @@ This exercise is about identifying the type of an object, which can be simply do
 
 #### ex03
 This exercise is about NULL values of different types
+
+#### ex04
+This exercise is about working with assert, as well as throwing and catching exceptions
