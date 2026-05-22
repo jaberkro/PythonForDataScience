@@ -19,4 +19,3 @@ try:
         raise AssertionError("argument is not an integer")
 except AssertionError as error:
     print("AssertionError:", error.args[0])
-    
