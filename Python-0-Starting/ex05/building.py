@@ -32,18 +32,19 @@ def getUserInput() -> str:
     return userInput
 
 
-def main():
+def main() -> int:
     """Program to print the total character count of an inputted string, \
         as well as the count per type of characters"""
     try:
         assert len(sys.argv) < 3, "more than one argument is provided"
     except AssertionError as error:
         print("AssertionError:", error.args[0])
-        exit(1)
+        return 1
 
     userInput = getUserInput()
     countText(userInput)
 
+    return 0
 
 if __name__ == "__main__":
     main()

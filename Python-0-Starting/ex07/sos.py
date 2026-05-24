@@ -1,7 +1,7 @@
 import sys
 
 
-def getNestedMorse():
+def getNestedMorse() -> dict:
     """function that returns a dictionary with morse codes for chars, digits \
         and spaces"""
     NESTED_MORSE = {" ": "/ ",
@@ -47,7 +47,7 @@ def getNestedMorse():
     return NESTED_MORSE
 
 
-def main():
+def main() -> int:
     """Program that converts a given input text to morse"""
     try:
         nestedMorse = getNestedMorse()
@@ -64,8 +64,8 @@ def main():
 
     except AssertionError as error:
         print("AssertionError:", error.args[0])
-        exit(1)
-
+        return 1
+    return 0
 
 if __name__ == "__main__":
     main()

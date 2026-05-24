@@ -2,7 +2,7 @@ import sys
 from ft_filter import ft_filter
 
 
-def main():
+def main() -> int:
     """Program to print all words from an input S that are bigger than N \
     characters long. Usage: python3 filterstring.py \"S\" N"""
     S = []
@@ -21,7 +21,8 @@ def main():
 
     except AssertionError as error:
         print("AssertionError:", error.args[0])
-        exit(1)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
