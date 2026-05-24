@@ -10,12 +10,13 @@ try:
 
     try:
         argument = int(sys.argv[1])
-        
+
         if argument % 2 == 0:
             print("I'm Even.")
         else:
             print("I'm Odd.")
-    except:
+    except ValueError:
         raise AssertionError("argument is not an integer")
+
 except AssertionError as error:
     print("AssertionError:", error.args[0])
