@@ -2,6 +2,8 @@ import sys
 
 
 def getNestedMorse():
+    """function that returns a dictionary with morse codes for chars, digits \
+        and spaces"""
     NESTED_MORSE = {" ": "/ ",
                     "A": ".- ",
                     "B": "-... ",
@@ -46,6 +48,7 @@ def getNestedMorse():
 
 
 def main():
+    """Program that converts a given input text to morse"""
     try:
         nestedMorse = getNestedMorse()
         morseOutput = ""
