@@ -1,7 +1,7 @@
 import sys
 
 
-def countText(textToCount):
+def countText(textToCount) -> None:
     """Prints the total count of characters and count per type for a string"""
     print("The text contains", len(textToCount), "characters")
     print(sum(1 for x in textToCount if x.isupper()), "upper letters")
@@ -17,7 +17,7 @@ def countText(textToCount):
     print(sum(1 for x in textToCount if x.isdigit()), "digits")
 
 
-def getUserInput():
+def getUserInput() -> str:
     """Takes the input argument from the user, or prompts the user to \
         give one if it was not provided or empty"""
     userInput = ""
