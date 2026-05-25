@@ -1,20 +1,15 @@
 from sys import argv
+from string import punctuation as punct
 
 
-def countText(textToCount) -> None:
+def countText(text: str) -> None:
     """Prints the total count of characters and count per type for a string"""
-    print("The text contains", len(textToCount), "characters")
-    print(sum(1 for x in textToCount if x.isupper()), "upper letters")
-    print(sum(1 for x in textToCount if x.islower()), "lower letters")
-    print(sum(1 for x in textToCount if (
-                                        x.isascii
-                                        and not x.isupper()
-                                        and not x.islower()
-                                        and not x.isspace()
-                                        and not x.isdigit()
-                                    )), "punctuation marks")
-    print(sum(1 for x in textToCount if x.isspace()), "spaces")
-    print(sum(1 for x in textToCount if x.isdigit()), "digits")
+    print("The text contains", len(text), "characters")
+    print(sum(1 for char in text if char.isupper()), "upper letters")
+    print(sum(1 for char in text if char.islower()), "lower letters")
+    print(sum(1 for char in text if char in punct), "punctuation marks")
+    print(sum(1 for char in text if char.isspace()), "spaces")
+    print(sum(1 for char in text if char.isdigit()), "digits")
 
 
 def getUserInput() -> str:
