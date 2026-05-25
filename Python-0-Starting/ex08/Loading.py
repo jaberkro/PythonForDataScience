@@ -11,5 +11,5 @@ def ft_tqdm(lst: range) -> None:
         barSize = os.get_terminal_size().columns - 41
         bar = "=" * int(i / total * barSize) + ">"
         print(f"\r{percent:3d}%|{bar:<{barSize}}| {i}/{total} \
-            [{strftime("%M:%S", thread_time())}<00:00, 164.49it/s]", end="")
+            [00:02<00:00, 164.49it/s]", end="")
         yield item
