@@ -1,8 +1,10 @@
 import os
+from time import thread_time
+from time import strftime
+from time import strptime
 
 
 def ft_tqdm(lst: range) -> None:
-
     print("%3d%%| [" % (int(lst[0]) / int(lst[1]) * 100), end="")
     total = len(lst)
     for i, item in enumerate(lst, start=1):
@@ -10,5 +12,5 @@ def ft_tqdm(lst: range) -> None:
         barSize = os.get_terminal_size().columns - 41
         bar = "=" * int(i / total * barSize) + ">"
         print(f"\r{percent:3d}%|{bar:<{barSize}}| {i}/{total} \
-            [00:02<00:00, 164.49it/s]", end="")
+            [{strftime("%M:%S", thread_time())}<00:00, 164.49it/s]", end="")
         yield item

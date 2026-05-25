@@ -18,3 +18,11 @@ This exercise is about NULL values of different types
 
 #### ex04
 This exercise is about working with assert, as well as throwing and catching exceptions
+
+#### ex05
+
+#### ex06
+
+#### ex07
+
+#### ex08

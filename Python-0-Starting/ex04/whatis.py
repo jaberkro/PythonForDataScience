@@ -1,15 +1,15 @@
-import sys
+from sys import argv
 
 try:
-    assert len(sys.argv) > 1, ""
+    assert len(argv) > 1, ""
 except AssertionError:
-    sys.exit()
+    exit(1)
 
 try:
-    assert len(sys.argv) == 2, "more than one argument is provided"
+    assert len(argv) == 2, "more than one argument is provided"
 
     try:
-        argument = int(sys.argv[1])
+        argument = int(argv[1])
     except ValueError:
         raise AssertionError("argument is not an integer")
 

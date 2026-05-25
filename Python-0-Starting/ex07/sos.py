@@ -1,4 +1,4 @@
-import sys
+from sys import argv
 
 
 def getNestedMorse() -> dict:
@@ -53,12 +53,12 @@ def main() -> int:
         nestedMorse = getNestedMorse()
         morseOutput = ""
 
-        assert len(sys.argv) == 2, "the arguments are bad"
+        assert len(argv) == 2, "the arguments are bad"
 
-        for char in sys.argv[1]:
+        for char in argv[1]:
             assert char.isspace() or char.isalnum(), "the arguments are bad"
 
-        for char in sys.argv[1]:
+        for char in argv[1]:
             morseOutput += nestedMorse[char.upper()]
         print(morseOutput[:-1])
 

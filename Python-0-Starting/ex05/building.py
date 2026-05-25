@@ -1,4 +1,4 @@
-import sys
+from sys import argv
 
 
 def countText(textToCount) -> None:
@@ -22,8 +22,8 @@ def getUserInput() -> str:
         give one if it was not provided or empty"""
     userInput = ""
 
-    if len(sys.argv) == 2:
-        userInput = sys.argv[1]
+    if len(argv) == 2:
+        userInput = argv[1]
 
     while userInput == "":
         userInput = input("What is the text to count?\n")
@@ -36,7 +36,7 @@ def main() -> int:
     """Program to print the total character count of an inputted string, \
         as well as the count per type of characters"""
     try:
-        assert len(sys.argv) < 3, "more than one argument is provided"
+        assert len(argv) < 3, "more than one argument is provided"
     except AssertionError as error:
         print("AssertionError:", error.args[0])
         return 1

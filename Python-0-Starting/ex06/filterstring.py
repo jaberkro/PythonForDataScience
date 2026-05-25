@@ -1,4 +1,4 @@
-import sys
+from sys import argv
 from ft_filter import ft_filter
 
 
@@ -9,11 +9,11 @@ def main() -> int:
     N = 0
 
     try:
-        assert len(sys.argv) == 3, "the arguments are bad"
+        assert len(argv) == 3, "the arguments are bad"
 
         try:
-            S = (sys.argv[1]).split()
-            N = int(sys.argv[2])
+            S = (argv[1]).split()
+            N = int(argv[2])
         except ValueError:
             raise AssertionError("the arguments are bad")
 
