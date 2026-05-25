@@ -8,7 +8,7 @@ This piscine has 5 modules, which each have their own exercises. In this README 
 This exercise is about getting to know the different data types that are commonly used in Python: List, Tuple, Set and Dictionary. The challenge is to change the second element (index 1) of each predefined data type. Changing data in a List is easily done by overwriting the data at the specific index, but Tuples are a bit more tricky because they are unchangeable. The only way to change the data in a tuple is be redefining the data. For a Set you can discard elements and add them, but on MacOS they will be added to the front of the Set, while Linux adds it to the back, potentially messing up the order. For Dictionaries you can re-assign a value to a specific key.
 
 #### ex01
-This exercise is about printing and formatting date time information. In my implementation I worked with F-strings and time.strftime.
+This exercise is about importing and using libraries by printing and formatting date time information. In my implementation I worked with F-strings and the functions time, localtime, strftime from the time library.
 
 #### ex02
 This exercise is about identifying the type of an object, which can be simply done with the type() function. However, simply using this does not give the expected output as described in the subject. To create the expected output, I used a match statement, that will print a bit of extra information if it is a specific type. All other types besides List, Tuple. Set, Dict and Str, we print 'type not found', even though it might technically be possible to find the type.
@@ -17,12 +17,15 @@ This exercise is about identifying the type of an object, which can be simply do
 This exercise is about NULL values of different types
 
 #### ex04
-This exercise is about working with assert, as well as throwing and catching exceptions
+This exercise is about working with argv, assert, as well as throwing and catching exceptions
 
 #### ex05
+In this exercise a full program is written, docstrings are added and string utils are dived into
 
 #### ex06
+This exercise is about recoding filter and using it to filter a list of words that have a minimum x amount of characters.
 
 #### ex07
+This program takes a string as an argument and encodes it into morse code.
 
 #### ex08
