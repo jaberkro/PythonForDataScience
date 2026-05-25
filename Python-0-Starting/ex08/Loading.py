@@ -1,7 +1,6 @@
 import os
 from time import thread_time
 from time import strftime
-from time import strptime
 
 
 def ft_tqdm(lst: range) -> None:
