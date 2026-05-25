@@ -1,5 +1,6 @@
 from sys import argv
 
+
 try:
     assert len(argv) > 1, ""
 except AssertionError:
