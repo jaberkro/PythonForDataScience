@@ -5,10 +5,8 @@ ft_dict = {"Hello": "titi!"}
 
 ft_list[1] = "World!"
 ft_tuple = ("Hello", "The Netherlands!")
-ft_set.discard("Hello")
 ft_set.discard("tutu!")
 ft_set.add("Amsterdam!")
-ft_set.add("Hello")
 ft_dict["Hello"] = "Codam!"
 
 print(ft_list)
