@@ -12,7 +12,7 @@ def main() -> int:
         assert len(argv) == 3, "the arguments are bad"
 
         try:
-            S = (argv[1]).split()
+            S = argv[1].split()
             N = int(argv[2])
         except ValueError:
             raise AssertionError("the arguments are bad")
